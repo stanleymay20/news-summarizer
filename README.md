@@ -57,16 +57,18 @@ The system is designed with the following components:
 
 
 ## Usage
-      ```bash
-      python app.py
+    python app.py
 
 
 The application will automatically fetch news articles, generate summaries, fetch images, and post them to your WordPress blog.
 
 
 #### APIs and Environment Setup
+
 News API: Used to fetch news articles. Register at News API to get your API key.
+
 Unsplash API: Used to fetch relevant images. Register at Unsplash Developers to get your access key.
+
 WordPress XML-RPC API: Used to post content on WordPress. Make sure XML-RPC is enabled on your WordPress site.
 
 
