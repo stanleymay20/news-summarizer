@@ -44,10 +44,11 @@ The system is designed with the following components:
    git clone https://github.com/stanleymay20/news-summarizer.git
 
 2. **Install dependencies**:
+   ```bash
      pip install -r requirements.txt
 
-3. **Set Up Environment Variables**: Create a .env file in the root directory and add API keys:
-
+4. **Set Up Environment Variables**: Create a .env file in the root directory and add API keys:
+   ```bash
    NEWS_API_KEY=your_news_api_key
    WORDPRESS_URL=https://your-wordpress-site.com/xmlrpc.php
    WORDPRESS_USERNAME=your_username
@@ -57,6 +58,7 @@ The system is designed with the following components:
 
 ## Usage
 To run the application:
+```bash
  python app.py
 
 
