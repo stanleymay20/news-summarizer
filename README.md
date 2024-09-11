@@ -47,30 +47,26 @@ The system is designed with the following components:
      pip install -r requirements.txt
 
 3. **Set Up Environment Variables**: Create a .env file in the root directory and add API keys:
-      NEWS_API_KEY
-      WORDPRESS_URL
-      WORDPRESS_USERNAME
-      WORDPRESS_PASSWORD
-      UNSPLASH_ACCESS_KEY
+   NEWS_API_KEY=your_news_api_key
+   WORDPRESS_URL=https://your-wordpress-site.com/xmlrpc.php
+   WORDPRESS_USERNAME=your_username
+   WORDPRESS_PASSWORD=your_password
+   UNSPLASH_ACCESS_KEY=your_unsplash_access_key
 
 
-
-#### Usage
-```markdown
 ## Usage
 To run the application:
 ```bash
 python app.py
 
 
+The application will automatically fetch news articles, generate summaries, fetch images, and post them to your WordPress blog.
+
 
 #### APIs and Environment Setup
-```markdown
-## APIs and Environment Setup
-- **News API**: Used to fetch news articles.
-- **Unsplash API**: Used to fetch relevant images.
-- **WordPress XML-RPC API**: Used to post content on WordPress.
-Ensure API keys and access tokens are valid for these services and store them securely in a `.env` file.
+News API: Used to fetch news articles. Register at News API to get your API key.
+Unsplash API: Used to fetch relevant images. Register at Unsplash Developers to get your access key.
+WordPress XML-RPC API: Used to post content on WordPress. Make sure XML-RPC is enabled on your WordPress site.
 
 
 ## Deployment
@@ -83,10 +79,9 @@ The project can be deployed on Vercel for continuous deployment. Follow these st
 2. Deploy the Project:
    vercel
 
+Follow the prompts to link your GitHub repository and deploy the project.
 
 
-#### Contributing
-```markdown
 ## Contributing
 Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
 
