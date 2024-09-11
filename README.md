@@ -65,11 +65,11 @@ The application will automatically fetch news articles, generate summaries, fetc
 
 #### APIs and Environment Setup
 
-News API: Used to fetch news articles. Register at News API to get your API key.
+**News API**: Used to fetch news articles. Register at News API to get your API key.
 
-Unsplash API: Used to fetch relevant images. Register at Unsplash Developers to get your access key.
+**Unsplash API**: Used to fetch relevant images. Register at Unsplash Developers to get your access key.
 
-WordPress XML-RPC API: Used to post content on WordPress. Make sure XML-RPC is enabled on your WordPress site.
+**WordPress XML-RPC API**: Used to post content on WordPress. Make sure XML-RPC is enabled on your WordPress site.
 
 
 ## Deployment
@@ -80,7 +80,7 @@ The project can be deployed on Vercel for continuous deployment. Follow these st
    npm install -g vercel
 
 2. Deploy the Project:
-   vercel
+      vercel
 
 Follow the prompts to link your GitHub repository and deploy the project.
 
