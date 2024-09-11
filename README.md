@@ -40,7 +40,7 @@ The system is designed with the following components:
 - **Scheduling Module**: Schedules daily updates to keep the blog fresh.
 
 
-![News Summarizer Workflow](https://github.com/stanleyma20/news-summarizer/blob/main/news-summarizer-workflow.png)
+![News Summarizer Workflow](news-summarizer-workflow.png)
 
 *Figure 1: News Summarizer Application Workflow*
 
