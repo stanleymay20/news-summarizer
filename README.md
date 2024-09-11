@@ -1,5 +1,6 @@
 # News Summarizer Application
 
+
 ## Brief Description
 
 The News Summarizer Application is a Python-based tool designed to automate the process of fetching, summarizing, and posting news articles to a WordPress blog. It uses Natural Language Processing (NLP) to generate concise summaries and fetches relevant images to create engaging content.
@@ -15,6 +16,7 @@ The News Summarizer Application is a Python-based tool designed to automate the 
 - [Deployment](#deployment)
 - [Contributing](#contributing)
 - [License](#license)
+
 
 ## Introduction
 In the digital age, staying informed can be challenging with the overwhelming amount of news content available. The News Summarizer Application simplifies this by providing concise summaries and relevant images of news articles automatically on a WordPress blog.
@@ -39,6 +41,7 @@ The system is designed with the following components:
 
 
 ## Installation
+
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/stanleymay20/news-summarizer.git
@@ -79,8 +82,9 @@ The project can be deployed on Vercel for continuous deployment. Follow these st
    ```bash
    npm install -g vercel
 
-2. Deploy the Project:
-      vercel
+2. **Deploy the Project**:
+    ```bash
+    vercel
 
 Follow the prompts to link your GitHub repository and deploy the project.
 
