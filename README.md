@@ -47,6 +47,7 @@ The system is designed with the following components:
      pip install -r requirements.txt
 
 3. **Set Up Environment Variables**: Create a .env file in the root directory and add API keys:
+
    NEWS_API_KEY=your_news_api_key
    WORDPRESS_URL=https://your-wordpress-site.com/xmlrpc.php
    WORDPRESS_USERNAME=your_username
@@ -56,8 +57,7 @@ The system is designed with the following components:
 
 ## Usage
 To run the application:
-```bash
-python app.py
+ python app.py
 
 
 The application will automatically fetch news articles, generate summaries, fetch images, and post them to your WordPress blog.
