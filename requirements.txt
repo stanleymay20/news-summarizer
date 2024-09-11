@@ -1,0 +1,26 @@
+# Web scraping
+requests==2.32.3
+beautifulsoup4==4.12.2
+
+# NLP and Summarization
+transformers==4.34.0
+nltk==3.8.1
+tensorflow==2.14.0  # If using TensorFlow-based models like T5
+scikit-learn==1.4.0  # For TF-IDF and other preprocessing
+
+# Image Fetching from Unsplash API
+python-dotenv==1.0.1
+
+# Posting to WordPress
+python-wordpress-xmlrpc==2.3
+
+# Utility Libraries
+python-dateutil==2.9.0
+certifi==2024.7.4
+urllib3==2.2.2
+
+# (Optional) Logging, error handling, etc.
+logging==0.5.1.2
+
+
+
