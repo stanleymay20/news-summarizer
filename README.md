@@ -66,7 +66,7 @@ The system is designed with the following components:
 The application will automatically fetch news articles, generate summaries, fetch images, and post them to your WordPress blog.
 
 
-#### APIs and Environment Setup
+## APIs and Environment Setup
 
 **News API**: Used to fetch news articles. Register at News API to get your API key.
 
