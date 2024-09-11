@@ -57,9 +57,8 @@ The system is designed with the following components:
 
 
 ## Usage
-To run the application:
-```bash
- python app.py
+      ```bash
+      python app.py
 
 
 The application will automatically fetch news articles, generate summaries, fetch images, and post them to your WordPress blog.
