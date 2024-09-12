@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -114,3 +115,23 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .vercel
+=======
+# Ignore virtual environment directories
+venv/
+env/
+.myenv/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore environment variables
+.env
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node modules
+node_modules/
+>>>>>>> c07ced79c0f96c4ade87be838e1285a948d99a22

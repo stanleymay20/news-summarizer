@@ -1,0 +1,16 @@
+# Ignore environment files
+.env
+
+# Ignore virtual environment directories
+myenv/
+venv/
+
+# Ignore system files and directories
+.DS_Store
+Thumbs.db
+
+# Ignore other unnecessary files
+__pycache__/
+*.pyc
+AppData/
+
