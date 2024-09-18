@@ -56,7 +56,7 @@ The data flow diagram illustrates the path data takes from ingestion to publicat
 ### Architecture Diagram
 The architecture diagram provides a high-level overview of the system components and its interaction.
 
-![News Summarizer Architecture Diagram](docs/Copy%20of%20Architecture%20Diagram%20for%20News%20Summarizer.png)
+![News Summarizer Architecture Diagram](docs/Copy%20of%20Architecture%20Diagram%20for%20News%20Summarizer%20(1).png)
 
 ## Installation
 
