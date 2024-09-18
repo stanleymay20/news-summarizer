@@ -44,10 +44,11 @@ The system is designed with the following components:
 
 *Figure 1: News Summarizer Application Workflow*
 
-![News Summarizer Architecture Diagram](docs/Architecture%20Diagram%20for%20News%20Summarizer%20(3).png)
-
 
 ![News Summarizer Architecture Diagram](docs/Data%20Flow%20Diagram%20for%20News%20Summarizer%20Application%20(4).png)
+
+
+![News Summarizer Architecture Diagram](docs/Architecture%20Diagram%20for%20News%20Summarizer%20(3).png)
 
 ## Installation
 
