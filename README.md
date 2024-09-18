@@ -39,14 +39,22 @@ The system is designed with the following components:
 - **Publishing Module**: Posts summarized content to WordPress.
 - **Scheduling Module**: Schedules daily updates to keep the blog fresh.
 
+### News Summarizer Workflow Diagram
+This diagram illustrates the end-to-end workflow of the application, from fetching news articles to posting on the WordPress blog.
 
 ![News Summarizer Workflow](docs/Copy%20of%20News%20summarizer%20workflow%20chart.png)
 
 *Figure 1: News Summarizer Application Workflow*
 
+### Data Flow Diagram
+The data flow diagram illustrates the path data takes from ingestion to publication. This helps in understanding how data moves through the system and where transformations happen.
 
-![News Summarizer Architecture Diagram](docs/Data%20Flow%20Diagram%20for%20News%20Summarizer%20Application%20(5).png)
+![News Summarizer Data Flow Diagram](docs/Data%20Flow%20Diagram%20for%20News%20Summarizer%20Application%20(5).png)
 
+
+
+### Architecture Diagram
+The architecture diagram provides a high-level overview of the system components and its interaction.
 
 ![News Summarizer Architecture Diagram](docs/Copy%20of%20Architecture%20Diagram%20for%20News%20Summarizer.png)
 
