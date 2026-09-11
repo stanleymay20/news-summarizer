@@ -1,10 +1,12 @@
 # News Summarizer Application
 
+> **Historical prototype.** This repository preserves the original 2024 experimental lineage of the News Summarizer project. The structured academic successor is [`text-summarization-news-aggregation`](https://github.com/stanleymay20/text-summarization-news-aggregation). This repository is intentionally retained because `news_summarizer.ipynb` contains unique Reuters scraping, TF-IDF extractive summarization, and Flask trigger experiments that are not currently implemented in the successor. Do not delete this repository as a duplicate.
 
 ## Brief Description
 
-The News Summarizer Application is a Python-based tool designed to automate the process of fetching, summarizing, and posting news articles to a WordPress blog. It uses Natural Language Processing (NLP) to generate concise summaries and fetches relevant images to create engaging content.
+The News Summarizer Application is a Python-based prototype designed to automate the process of fetching, summarizing, and posting news articles to a WordPress blog. The notebook explores NewsAPI ingestion, Reuters scraping, extractive and abstractive summarization, WordPress publishing, and a Flask trigger endpoint.
 
+The repository also contains historical environment/deployment artifacts. It should be treated as **prototype/evidence**, not as the current production-ready implementation.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -17,104 +19,81 @@ The News Summarizer Application is a Python-based tool designed to automate the 
 - [Contributing](#contributing)
 - [License](#license)
 
-
 ## Introduction
-In the digital age, staying informed can be challenging with the overwhelming amount of news content available. The News Summarizer Application simplifies this by providing concise summaries and relevant images of news articles automatically on a WordPress blog.
-
+In the digital age, staying informed can be challenging with the overwhelming amount of news content available. This prototype explored an automated pipeline for collecting news, generating concise summaries, and publishing them to WordPress.
 
 ## Features
-- Fetches news articles from multiple sources.
-- Generates both extractive and abstractive summaries.
-- Fetches relevant images based on the article title.
-- Automatically posts summaries to a WordPress blog.
-- Runs daily to keep the blog updated with fresh content.
 
+Experimental work preserved in the repository includes:
+
+- NewsAPI article collection;
+- Reuters archive scraping;
+- TF-IDF extractive summarization;
+- T5-based abstractive summarization;
+- WordPress publishing;
+- a Flask `/summarize` trigger endpoint.
+
+Earlier documentation also proposed image fetching and scheduled updates. Those claims should be treated as design intent unless corresponding executable source is present; no Unsplash implementation was found in the current notebook.
 
 ## System Design
-The system is designed with the following components:
-- **Data Collection Module**: Fetches news articles using APIs and web scraping.
-- **Preprocessing Module**: Cleans and preprocesses articles for summarization.
-- **Summarization Module**: Generates concise summaries using NLP techniques.
-- **Image Fetching Module**: Fetches relevant images from Unsplash.
-- **Publishing Module**: Posts summarized content to WordPress.
-- **Scheduling Module**: Schedules daily updates to keep the blog fresh.
+The intended system design included:
+- **Data Collection Module**: news APIs and web scraping.
+- **Preprocessing Module**: article cleaning and preprocessing.
+- **Summarization Module**: extractive and abstractive NLP experiments.
+- **Image Fetching Module**: proposed Unsplash integration.
+- **Publishing Module**: WordPress publishing.
+- **Scheduling Module**: proposed scheduled updates.
 
 ### News Summarizer Workflow Diagram
-This diagram illustrates the end-to-end workflow of the application, from fetching news articles to posting on the WordPress blog.
 
 ![News Summarizer Workflow](docs/Copy%20of%20News%20summarizer%20workflow%20chart.png)
 
 *Figure 1: News Summarizer Application Workflow*
 
 ### Data Flow Diagram
-The data flow diagram illustrates the path data takes from ingestion to publication. This helps in understanding how data moves through the system and where transformations happen.
 
 ![News Summarizer Data Flow Diagram](docs/Data%20Flow%20Diagram%20for%20News%20Summarizer%20Application%20(5).png)
 
-
-
 ### Architecture Diagram
-The architecture diagram provides a high-level overview of the system components and its interaction.
 
 ![News Summarizer Architecture Diagram](docs/Copy%20of%20Architecture%20Diagram%20for%20News%20Summarizer%20(1).png)
 
 ## Installation
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/stanleymay20/news-summarizer.git
+This repository is retained primarily for historical/academic evidence. If reproducing the notebook, create a fresh virtual environment rather than using the committed historical `myenv/` directory.
 
-2. **Install dependencies**:
-   ```bash
-     pip install -r requirements.txt
+```bash
+git clone https://github.com/stanleymay20/news-summarizer.git
+cd news-summarizer
+python -m venv .venv
+pip install -r requirements.txt
+```
 
-4. **Set Up Environment Variables**: Create a .env file in the root directory and add API keys:
-   ```bash
-   NEWS_API_KEY=your_news_api_key
-   WORDPRESS_URL=https://your-wordpress-site.com/xmlrpc.php
-   WORDPRESS_USERNAME=your_username
-   WORDPRESS_PASSWORD=your_password
-   UNSPLASH_ACCESS_KEY=your_unsplash_access_key
-
+Create a local `.env` only as needed. Never commit real credentials.
 
 ## Usage
-    python app.py
 
-
-The application will automatically fetch news articles, generate summaries, fetch images, and post them to your WordPress blog.
-
+The principal executable evidence is the `news_summarizer.ipynb` notebook. The earlier README referred to `app.py`, but no `app.py` exists on the current default branch.
 
 ## APIs and Environment Setup
 
-**News API**: Used to fetch news articles. Register at News API to get your API key.
+Historical experiments/reference designs use:
 
-**Unsplash API**: Used to fetch relevant images. Register at Unsplash Developers to get your access key.
+- **NewsAPI** for article ingestion;
+- **Reuters** archive scraping in the notebook;
+- **WordPress** credentials for publishing experiments;
+- **Unsplash** only as a proposed/documented image source in the current repository state.
 
-**WordPress XML-RPC API**: Used to post content on WordPress. Make sure XML-RPC is enabled on your WordPress site.
-
+Keep all credentials in environment variables or repository secrets.
 
 ## Deployment
-The project can be deployed on Vercel for continuous deployment. Follow these steps:
 
-1. **Install Vercel CLI**:
-   ```bash
-   npm install -g vercel
-
-2. **Deploy the Project**:
-    ```bash
-    vercel
-
-Follow the prompts to link your GitHub repository and deploy the project.
-
+Deployment files in this repository are historical evidence and should not be treated as a verified deployment pipeline. Review external publishing side effects and current dependencies before reactivating any automation.
 
 ## Contributing
-Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
 
+This repository is historical. New implementation work should normally target the structured successor unless it specifically concerns preservation of the prototype lineage.
 
 ## License
+
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
-
-
-
